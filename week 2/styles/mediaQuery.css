@@ -7,9 +7,9 @@ body{
 header, main, footer{
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid lightblue;
+    border: 1px solid #bbb;
     padding: 1rem;
-    background-color: lightblue;
+    background-color: #e6f2ff;
 }
 
 main{
