@@ -187,3 +187,44 @@ footer{
     }
     
 }
+
+@media screen and (max-width: 650px){
+
+    
+        header {
+            .headerdiv1 {
+                padding: 10px;
+            }
+            .headerdiv2 {
+                nav {
+                    .list {
+                        flex-direction: column;
+                        font-size: var(--fs-200);
+                        .nav-list-items {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        main {
+            display: flex;
+            flex-direction: column;
+    
+            .card1, .card2 {
+                grid-column: initial;
+                margin: 10px;
+            }
+    
+            .card1 .cardcontent, .card2 .resouceTags {
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    
+        footer {
+            padding: 10px;
+        }
+
+}
