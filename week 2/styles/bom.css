@@ -1,0 +1,60 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  
+  section{
+    margin: 20% 80px;
+    background-color: gray;
+    border-radius: 10px;
+    text-align: center;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 100px;
+        h1{
+            font-size: 20px;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+        button{
+
+            border-radius: 5px;
+            width: 150px;
+            height: 30px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        ul{
+            list-style: none;
+            margin: 1rem;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                
+                padding: 10px 50px;
+
+                .delbtn{
+                    color: red;
+                    font-weight: bolder;
+                    width: 30px;
+                    right: 0;
+                    
+                }
+            }
+        }
+
+
+        
+    }
+
+  }
+    
+}

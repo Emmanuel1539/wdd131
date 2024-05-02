@@ -1,0 +1,134 @@
+
+:root{
+    --clr-primary: #370560;
+    --clr-secondary: #1fa2d2;
+    --clr-accent1: #ffffff;;
+    --clr-accent2: #000000;
+    --ff-header: Roboto;
+    --ff-paragraph: Roboto;
+    --fw-thin: 100;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-100: 1rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.375rem;
+    --fs-600: 1.75rem;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-header,--ff-paragraph);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    font-weight: var(--fw-regular);
+    color: var(--clr-accent2);
+    margin: 0;
+    padding: 0;
+
+
+    
+header{
+
+    background-color: var(--clr-primary) ;
+    color: var(--clr-accent1);
+    margin-top: 0;
+
+    .title{
+        font-size: var(--fs-600);
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+       
+        align-items: center;
+        margin: 0 50px;
+
+        .hamburger{
+            display: none;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            margin: 10px;
+            
+
+            li{
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 5px;
+
+                a{
+                    text-decoration: none;
+                    color: var(--clr-accent1);
+                }
+            }
+
+            li:hover{
+                background-color: var(--clr-secondary);
+            }
+        }
+    }
+}
+main{
+    margin: 1rem 2rem;
+    
+
+    .container{
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-gap: 20px;
+        place-items: center;
+
+        figure{
+            font-size: var(--fs-100);
+            text-align: center;
+    
+            img{
+                width: 220px; 
+                height: 220px; 
+                margin: .5rem;
+            }
+        }
+    }
+    
+}
+
+
+footer{
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    color: var(--clr-accent1);
+    
+    .eduimage{
+        width: 15px;
+        height: 15px;
+        border-radius:5px;
+
+    .icon{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .highlight {
+        color: var(--clr-secondary);
+        font-weight: var(--fw-regular);
+        font-family: var(--ff-header);
+    }
+    }
+    
+}
+}
