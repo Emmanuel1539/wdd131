@@ -55,20 +55,25 @@ body{
         font-size: var(--fs-300);
         font-weight: var(--fw-bold);
         list-style: none;
+        
     }
     
     .nav-list-items {
         padding: 10px;
+        
+        
     }
     
     .nav-list-links {
         text-decoration: none;
         color: var(--clr-accent1);
+        padding: 10px;
     }
     
-    .nav-list-items:hover {
+    .nav-list-links:hover {
         background-color: var(--clr-secondary);
         border-radius: 10px;
+       
     }
     
 
