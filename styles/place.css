@@ -1,0 +1,174 @@
+
+:root{
+   --primary: #14BB1D;
+   --secondary: #325820;
+
+   --accent1: #ffffff;
+   --accent2: #000;
+
+   --ff-header: Roboto;
+    --ff-paragraph: Roboto;
+    --fw-thin: 100;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-header);
+}
+
+header{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.country{
+    background-color: var(--primary);
+    height: 70px;
+    width: 0 auto;
+    text-align: center;
+    color: var(--accent2);
+    font-size: 30px;
+    font-weight: var(--fw-bold);
+    align-content: center;
+}
+
+.header-color{
+    background-color: var(--secondary);
+    height: 10px;
+}
+
+.bg img{
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+ 
+}
+
+.bg{
+    /* position: relative; */
+    
+    height: 100vh;
+    position: relative;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.data-header{
+    background-color: var(--primary);
+    font-weight: var(--fw-regular);
+    font-size: 20px;
+    width: 100px;
+}
+.row{
+   font-size: 13px; 
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+}
+.col1{
+    font-weight: var(--fw-bold);
+    margin: 2px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.col{
+    margin: 2px;
+    padding:2px;
+    text-align: left;
+}
+.country-data{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--accent1);
+    width: 200;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.weather{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent1);
+    width: 180px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    padding: 5px;
+    
+}
+.weather-icon:only-child{
+    float: right;
+    align-items: right ;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.weather-icon:only-child img{
+    width: 35px;
+    height: 25px;
+}
+
+.data-detail{
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.data-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 2px 5px;
+    width: 120px;
+}
+
+footer{
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    color: var(--clr-accent1);}
+    
+    .eduimage {
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+    }
+    
+    .footer .icon {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .footer .highlight {
+        color: var(--clr-secondary);
+        font-weight: var(--fw-regular);
+        font-family: var(--ff-header);
+    }
+    
+
+        
+   
+    
