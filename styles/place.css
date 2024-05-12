@@ -1,155 +1,149 @@
 
-:root{
-   --primary: #14BB1D;
-   --secondary: #325820;
 
-   --accent1: #ffffff;
-   --accent2: #000;
-
-   --ff-header: Roboto;
-    --ff-paragraph: Roboto;
-    --fw-thin: 100;
-    --fw-regular: 400;
-    --fw-bold: 700;
-
-}
-
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--ff-header);
-}
-
-header{
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-}
-.country{
-    background-color: var(--primary);
-    height: 70px;
-    width: 0 auto;
-    text-align: center;
-    color: var(--accent2);
-    font-size: 30px;
-    font-weight: var(--fw-bold);
-    align-content: center;
-}
-
-.header-color{
-    background-color: var(--secondary);
-    height: 10px;
-}
-
-.bg img{
-   width: 100%;
-   height: 100vh;
-   overflow: hidden;
- 
-}
-
-.bg{
-    /* position: relative; */
+     :root {
+        --primary: #14BB1D;
+        --secondary: #325820;
     
-    height: 100vh;
-    position: relative;
-}
-.data{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.data-header{
-    background-color: var(--primary);
-    font-weight: var(--fw-regular);
-    font-size: 20px;
-    width: 100px;
-}
-.row{
-   font-size: 13px; 
-   display: flex;
-   flex-direction: row;
-   text-align: center;
-}
-.col1{
-    font-weight: var(--fw-bold);
-    margin: 2px;
-    padding: 0 10px;
-    text-align: left;
-}
-
-.col{
-    margin: 2px;
-    padding:2px;
-    text-align: left;
-}
-.country-data{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: var(--accent1);
-    width: 200;
-    margin-top: 50px;
-    margin-left: 40px;
-}
-.weather{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: var(--accent1);
-    width: 180px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    padding: 5px;
+        --accent1: #ffffff;
+        --accent2: #000;
     
-}
-.weather-icon:only-child{
-    float: right;
-    align-items: right ;
-    margin-top: 0;
-    margin: 0;
-    padding: 0;
-
-}
-
-
-.weather-icon:only-child img{
-    width: 35px;
-    height: 25px;
-}
-
-.data-detail{
-    margin: 10px;
-    padding: 5px;
-    position: relative;
-    margin-top: 30px;
-}
-
-.data-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: -5px;
-    margin-top: 5px;
-    padding: 2px 5px;
-    width: 120px;
-}
-
-footer{
-    background-color: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    color: var(--clr-accent1);}
+        --ff-header: Roboto;
+        --ff-paragraph: Roboto;
+        --fw-thin: 100;
+        --fw-regular: 400;
+        --fw-bold: 700;
+    }
+    
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--ff-header);
+    }
+    
+    header {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .country {
+        background-color: var(--primary);
+        height: 70px;
+        width: auto; 
+        text-align: center;
+        color: var(--accent2);
+        font-size: 30px;
+        font-weight: var(--fw-bold);
+      
+    }
+    
+    .header-color {
+        background-color: var(--secondary);
+        height: 10px;
+    }
+    
+    .bg img {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .bg {
+        height: 100vh;
+        position: relative;
+    }
+    
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .data-header {
+        background-color: var(--primary);
+        font-weight: var(--fw-regular);
+        font-size: 20px;
+        width: 100px;
+    }
+    
+    .row {
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .col1 {
+        font-weight: var(--fw-bold);
+        margin: 2px;
+        padding: 0 10px;
+        text-align: left;
+    }
+    
+    .col {
+        margin: 2px;
+        padding: 2px;
+        text-align: left;
+    }
+    
+    .country-data {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--accent1);
+        width: 200px; 
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    
+    .weather {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: var(--accent1);
+        width: 180px; 
+        margin-bottom: 100px;
+        margin-right: 50px;
+        padding: 5px;
+    }
+    
+    .weather-icon img {
+        width: 35px;
+        height: 25px;
+        float: right; 
+    }
+    
+    .data-detail {
+        margin: 10px;
+        padding: 5px;
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .data-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -5px;
+        margin-top: 5px;
+        padding: 2px 5px;
+        width: 120px;
+    }
+    
+    footer {
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        color: var(--accent1);
+    }
     
     .eduimage {
         width: 15px;
@@ -163,12 +157,29 @@ footer{
     }
     
     .footer .highlight {
-        color: var(--clr-secondary);
+        color: var(--secondary);
         font-weight: var(--fw-regular);
         font-family: var(--ff-header);
     }
     
-
-        
-   
+    @media screen and (max-width: 768px) {
+        .country-data,
+        .weather {
+            position: static; /* Reset position to static */
+            width: auto; /* Allow elements to adjust width */
+            margin-top: 20px; /* Adjust margin for spacing */
+            margin-left: 0; /* Reset left margin */
+            right: auto; /* Reset right position */
+            bottom: auto; /* Reset bottom position */
+        }
+    
+        .data-detail {
+            margin-top: 10px; /* Adjust margin for spacing */
+        }
+    
+        .data-header {
+            position: static; /* Reset position to static */
+            margin-top: 0; /* Reset top margin */
+        }
+    }
     
