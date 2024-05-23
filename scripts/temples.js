@@ -1,5 +1,4 @@
-const icon = document.querySelector('.hamburger');
-const menu = document.getElementById('menuList');
+
 
 // function toggleMenu() {
 //     // Use style property to access CSS properties
@@ -10,6 +9,8 @@ const menu = document.getElementById('menuList');
 //     }
 // }
 
+const icon = document.querySelector('.hamburger');
+const menu = document.getElementById('menuList');
 function toggleMenu() {
     // Check the computed style to determine visibility
     const computedStyle = window.getComputedStyle(menu);
