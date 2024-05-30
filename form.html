@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/form.js" defer></script>
+    <link rel="stylesheet" href="./styles/form.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="container">
+            <fieldset>
+                <div>Products</div>
+                <select name="products_container" class="products_container">
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <div>Date of Installation</div>
+                <label><input type="date" name="installation-date" id="installation-date" required></label>
+            </fieldset>
+
+            <fieldset>
+                <div>Overall Rating</div>
+                <div class="star-rating">
+                    <div class="rating-score"><input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733</label></div>
+                    <div class="rating-score"><input type="radio" id="star2" name="rating" value="2"><label for="star2" class="star">&#9733 &#9733</label></div>
+                    <div class="rating-score"><input type="radio" id="star3" name="rating" value="3"><label for="star3" class="star">&#9733 &#9733 &#9733</label></div>
+                    <div class="rating-score"><input type="radio" id="star4" name="rating" value="4"><label for="star4" class="star">&#9733 &#9733 &#9733 &#9733</label></div>
+                    <div class="rating-score"><input type="radio" id="star5" name="rating" value="5"><label for="star5" class="star">&#9733 &#9733 &#9733 &#9733 &#9733</label></div>
+                </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <div>Which features did you find useful in the product? <i>(Check all that apply)</i></div>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="usage" value="yes">Ease to Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Written Review (Optional) </label>
+                <textarea name="write-review" id="write-review"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <label> Your Name (Optional) <input type="text" name="fullname" required placeholder="Full name"></label>
+                
+            </fieldset>
+
+            <input type="submit" value="Review Product">
+        </form>
+    </main>
+    <footer>
+        <p>@<span id="currentyear">2023</span><span class="icon"><img class="eduimage" src="./images/eduimage.png" alt=""></span>Ekenedo Emmanuel<span class="icon"><img class="eduimage" src="./images/eduimage.png" alt=""></span>Nigeria</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
