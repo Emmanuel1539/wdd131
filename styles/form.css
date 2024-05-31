@@ -15,19 +15,18 @@
     --fs-600: 1.75rem;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 main {
     display: grid;
     place-items: center;
-    width: 90% auto;
-    
-  
+    width: 90%;
 }
 
-header{
+header {
     background-color: var(--clr-primary);
     color: var(--clr-accent1);
     text-align: center;
@@ -35,7 +34,6 @@ header{
     justify-content: center;
     padding: 10px;
     font-size: 15px;
-   
 }
 
 .container .star-rating label {
@@ -65,7 +63,6 @@ header{
 .container select,
 .container input[type="select"],
 .container textarea,
-
 .container input[type="date"] {
     display: block;
     border: solid 1px var(--clr-primary);
@@ -77,11 +74,10 @@ header{
     background-color: #999;
 }
 
-.container input[type = "radio"],
-.container input[type = "checkbox"]{
+.container input[type="radio"],
+.container input[type="checkbox"] {
     margin-right: 6px;
 }
-
 
 .star {
     font-size: 30px;
@@ -92,19 +88,16 @@ header{
     color: gold;
 }
 
-.container input[type = "submit"]{
+.container input[type="submit"] {
     border: none;
     border-radius: 6px;
     padding: .8rem;
     background-color: var(--clr-primary);
     width: 100%;
     color: var(--clr-accent1);
-    margin-bottom: 1.5rem ;
-    
+    margin-bottom: 1.5rem;
     font-size: 20px;
 }
-
-
 
 footer {
     background-color: var(--clr-primary);
@@ -149,12 +142,26 @@ footer {
     color: var(--clr-primary);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and  (min-width: 720px) {
     .container input[type="text"],
     .container input[type="email"],
     .container select,
+    .container input[type="select"],
     .container textarea,
-    .container input[type="date"] {
+    .container input[type="date"] 
+    {
+        display: block;
+        border: solid 1px var(--clr-primary);
+        padding: .75rem;
+        color: var(--clr-accent1);
         width: 40rem;
+        border-radius: 6px;
+        max-width: 480px;
+        background-color: #999;
+    }
+
+    .container input[type="radio"],
+    .container input[type="checkbox"] {
+        margin-right: 6px;
     }
 }
