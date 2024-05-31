@@ -148,3 +148,13 @@ footer {
     font-size: 1.2rem;
     color: var(--clr-primary);
 }
+
+@media screen and (min-width: 720px) {
+    .container input[type="text"],
+    .container input[type="email"],
+    .container select,
+    .container textarea,
+    .container input[type="date"] {
+        width: 40rem;
+    }
+}
