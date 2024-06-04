@@ -35,6 +35,7 @@ header {
 .logo {
     width: 100px;
     height: 100px;
+    border-radius: 10px;
 }
 
 .logo a img {
@@ -75,6 +76,8 @@ ul.menuLinks {
     list-style-type: none;
     margin: 0;
     
+   
+    
 }
 
 ul.menuLinks.open {
@@ -83,21 +86,30 @@ ul.menuLinks.open {
 
 ul.menuLinks li {
     list-style: none;
+    padding: 15px;
+    
+   
     
 }
 
 ul.menuLinks li a {
     text-decoration: none;
     display: block;
-    padding: .75rem 1vw;
+    padding: 0.75rem 3vw;
     color: var(--clr-accent1);
     text-align: center;
+    margin-right: 35px;
+
    
 }
 
-.current_menu_item{
+li.current_menu_item a {
+
     background-color: var(--clr-secondary);
     border-radius: 6px;
+   
+    
+    
 }
 
 /* ------HOME PAGE */

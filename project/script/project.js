@@ -63,15 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.querySelector(".hamburger");
-        const menuLinks = document.querySelector(".menuLinks");
+    const hamburger = document.querySelector(".hamburger");
+    const menuLinks = document.querySelector(".menuLinks");
 
-        hamburger.addEventListener("click", function() {
-            menuLinks.classList.toggle("open");
-            hamburger.classList.toggle("open");
-        });
+    hamburger.addEventListener("click", function() {
+        menuLinks.classList.toggle("open");
+        hamburger.classList.toggle("open");
     });
+
+   
 
     // thank.html to display the review count
     if (window.location.pathname.includes('thank.html')) {
