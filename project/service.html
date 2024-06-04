@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Farms Service Page</title>
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <a href="project.html">
+                <img src="./image/project_image/logo2.png" alt="logo">
+            </a>
+        </div>
+    </header>
+    
+    <nav>
+        <button class="hamburger"></button>
+        <ul class="menuLinks">
+            <li><a href="project.html" >Home</a></li>
+            <li><a href="investment.html">Investment</a></li>
+            <li><a href="service.html" class="current_menu_item" >Service</a></li>
+            
+        </ul>
+    </nav>
+
+
+     <section class="background">
+        <h1>Farm Management And Consultancy</h1>
+        <p>Emmanuel Farms: Technology | Business | Opportunities</p>
+     </section>
+
+     <section class="section">
+        <div class="container">
+            <div class="split">
+                <div class="card-text white">
+                    <h3>Farm Management and Consultancy</h3>
+                    <p>We help third parties in the setup of their farms, management and also provide consultancy services. 
+                        We offer streamline operations with our Farm Management services. We optimize resources, plan strategically, 
+                        and integrate innovative techniques for increased productivity. Our expert team ensures efficient day-to-day activities, 
+                        empowering your farm's success. Seek tailored solutions with our Consultancy services. Gain personalized advice on crop selection, 
+                        market insights, and operational enhancements. Our expert consultants work closely with you, offering strategic guidance for maximizing farm profitability and success
+
+                    </p>
+                    <div class="btn">
+                        <a href="./service.html">Invest Now</a>
+                     </div>
+                </div>
+                <div class="service-image interchange">
+                    <img loading="lazy" src="./image/project_image/farm-management.jpg" alt="a woman in the farm" width="500" height="400">
+                </div>
+                
+                
+            </div>
+        </div>
+     </section>
+
+     <section class="section">
+        <div class="container">
+            <div class="split">
+                <div class="service-image">
+                    <img loading="lazy" src="./image/project_image/tractor copy.jpg" alt="tractor equipement" width="500" height="400">
+                </div>
+                <div class="card-text text">
+                    <h3>Equipments Leasing Services</h3>
+                    <p>Access top-quality farming equipment with our leasing services. 
+                        From tractors to specialized machinery, we offer flexible lease options for your farm's needs. 
+                        Enhance efficiency and productivity without the burden of ownership, ensuring cost-effective solutions for your agricultural operations.
+                    </p>
+                    <div class="btn">
+                        <a href="./service.html">Invest Now</a>
+                     </div>
+                </div>                
+            </div>
+        </div>
+     </section>
+
+     <section class="section">
+        <div class="container grey">
+            <h3>Send us a Message</h3>
+            <form action="thank.html" method="get" class="form-container">
+                <fieldset>
+                    <legend>Customer's Information</legend>
+                    <label for="">
+                        Full Name*<input type="text" name="fullname" required placeholder="Your fullname...">
+                    </label>
+                    <label for="">
+                        Email*<input type="email" name="email" required placeholder="someone@gmail.com">
+                    </label>
+                    <label for="">
+                        Phone Number*<input type="tel" name="phone" placeholder="081000000" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service Information</legend>
+                    <div>Service/Investment choice</div>
+                    <label><input type="radio" id="choice" name="choice" value="farmer"> I'm a farmer</label>
+                    <label><input type="radio" id="choice" name="investor" value="investor"> I want to invest</label>
+                    <label><input type="radio" id="choice" name="enquire" value="enquire"> I want to enquire</label>
+
+                    <div>Service Type</div>
+                    <select name="service-type-container" class="service-type-container" required>
+                        <option value="" >Select a service type</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message detail</legend>
+                    <label>Write to us (Optional)</label>
+                    <textarea name="write-us" id="write-us"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Send Message" class="submitBtn">
+
+            </form>
+        </div>
+    </section>
+
+     <footer>
+        <div class="footers">
+            <h3>Emmanuel Farms &copy; 2023</h3>
+        </div>
+    
+        <div class="footers">
+            <H4>Contact Us</H4>
+            <div class="contact-us">
+                <p>Address: </p>
+                <p>7 Ligali Aworedo, Victoria Island, Lagos Nigeria</p>
+            </div>
+            <div class="contact-us">
+                <p>Phone: </p>
+                <p>+234 0814 714 1069 </p>
+            </div>
+            <div class="contact-us">
+                <p>Email: </p>
+                <p>ekenedonzube1539@gmail.com</p>
+            </div>
+        </div>
+        <div class="footers">
+            <div class="social">
+                <a href="https://facebook.combine"  target="_blank">
+                    <img src="./image/project_image/facebook.png" alt="facebook fire_icon">
+                </a>
+                <a href="https://twitter.com"  target="_blank">
+                    <img src="./image/project_image/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com"  target="_blank">
+                    <img src="./image/project_image/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+</footer> 
+
+<script src="./script/project.js" defer></script>
+</body>
+</html>
