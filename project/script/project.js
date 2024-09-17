@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
     const menuLinks = document.querySelector(".menuLinks");
 
+    
+
     hamburger.addEventListener("click", function() {
         menuLinks.classList.toggle("open");
         hamburger.classList.toggle("open");
@@ -82,3 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+
